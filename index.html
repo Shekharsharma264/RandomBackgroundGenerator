@@ -13,7 +13,7 @@
     </div>
   </body>
   <script>
-    let colorGenerator = () => {
+    let colorChanger = () => {
       const hex = "0123456789ABCDEF";
       let color = "#";
 
@@ -31,7 +31,7 @@
     start.addEventListener("click", () => {
       if (!runner) {
         runner = setInterval(() => {
-          colorGenerator();
+          colorChanger();
         }, 500);
       }
     });
